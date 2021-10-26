@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Socket.io</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <!--Modelado de Interfaz-->
+
+    <div id="chat-container">
+        <div id="chat-window">
+            <div id="output">
+                <div id="actions">
+
+                </div>
+            </div>
+        </div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="message" placeholder="Message">
+        <button id="send">Send</button>
+    </div>
+
+    <!--Reconocimiento de Voz-->
+    <div id="texto">
+
+    </div>
+
+
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="chat.js" charset="utf-8"></script>
+    <script src="voz_a_texto.js" charset="utf-8"></script>
+</body>
+</html>
